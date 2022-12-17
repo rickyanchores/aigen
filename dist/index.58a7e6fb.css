@@ -21,12 +21,22 @@ body {
   margin: auto;
 }
 
-.navbar {
-  color: red;
+.nav-container {
+  width: 100%;
+  margin: auto;
+}
+
+.nav-container .navbar {
   background: none;
 }
 
-.navbar .navbar-brand {
+.nav-container .navbar .navbar-collapse {
+  background: silver;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.nav-container .navbar .navbar-brand {
   color: teal;
   font-weight: bolder;
 }

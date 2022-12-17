@@ -25,13 +25,21 @@ body{
     width: 80%;
     margin: auto;
 }
-
-
-.navbar{
-    background: none;
-    color: red;
-    .navbar-brand{
-        color: $secondary;
-        font-weight: bolder;
+.nav-container{
+    width: 100%;
+    margin: auto;
+    .navbar{
+        background: none;
+        .navbar-collapse{
+            display: flex;
+            justify-content: flex-end;
+            background: silver;
+        }
+        .navbar-brand{
+            color: $secondary;
+            font-weight: bolder;
+        }
     }
 }
+
+

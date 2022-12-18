@@ -47,19 +47,21 @@ body{
 // HERO
 
 .hero{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("../images/_rhickeeeeeeey_cyberpunk_city_like_london_and_rome_with_angels__38eff546-aea4-46e3-b4fd-c2e0da2a576d.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
+    height: 100vh;
+    border: 2px solid red;
     #HeroTitle{
-        color: orange;
-        font-size: 5em;
+        color: $primary;
+        font-size: 12em;
     }
     #HeroDescription{
-        color: #fff;
+        color: #333;
+        background: red;
+        margin-left: 30%;
+        //margin-bottom: 20%;
     }
 }   

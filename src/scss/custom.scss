@@ -24,7 +24,7 @@ body{
 }
 
 .container{
-    background: #333 ;
+    background: #ccc ;
     color: floralwhite;
     border-radius: 12px;
     width: 80%;
@@ -87,16 +87,15 @@ body{
     }
     .left{
         width: 60%;
-        border: 2px solid teal;
+        //border: 2px solid teal;
         img{
             width: 100%;
         }
     }
     .right{
         width: 40%;
-        border: 2px solid coral;
+        //border: 2px solid coral;
         .box{
-            background: silver;
             border-radius: 12px;
             width: 300px;
             margin-bottom: 1em;
@@ -109,7 +108,14 @@ body{
                 text-align: center;
                 width: 70%;
                 padding: 1em;
+                .profile img{
+                    width: 50px;
+                    border-radius: 50%;
+                }
             }
         }
     }
 }
+
+
+

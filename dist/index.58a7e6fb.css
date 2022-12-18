@@ -22,7 +22,7 @@ body {
 .container {
   color: #fffaf0;
   width: 80%;
-  background: #333;
+  background: #ccc;
   border-radius: 12px;
   margin: auto;
 }
@@ -80,7 +80,6 @@ body {
 
 .Gallery .left {
   width: 60%;
-  border: 2px solid teal;
 }
 
 .Gallery .left img {
@@ -89,12 +88,10 @@ body {
 
 .Gallery .right {
   width: 40%;
-  border: 2px solid coral;
 }
 
 .Gallery .right .box {
   width: 300px;
-  background: silver;
   border-radius: 12px;
   margin-bottom: 1em;
 }
@@ -109,6 +106,11 @@ body {
   justify-content: space-between;
   padding: 1em;
   display: flex;
+}
+
+.Gallery .right .box .text .profile img {
+  width: 50px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=index.58a7e6fb.css.map */

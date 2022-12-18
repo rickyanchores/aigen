@@ -1,13 +1,13 @@
 $body-bg: #fff;
 $primary: teal;
-$secondary: teal;
+$secondary: coral;
+
 
 // PERSONAL EDIT
 body{
     background: $body-bg;
-    color:whitesmoke;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    color: #333;
+    font-family: 'Comfortaa', cursive;
 }
 
 .btn{
@@ -16,30 +16,50 @@ body{
 }
 .btn:hover{
     background: $secondary;
-    color: white;
 }
 
 .container{
     background: #333 ;
+    color: floralwhite;
     border-radius: 12px;
     width: 80%;
     margin: auto;
 }
+
+// NAVBAR
 .nav-container{
     width: 100%;
     margin: auto;
     .navbar{
         background: none;
         .navbar-collapse{
-            display: flex;
             justify-content: flex-end;
-            background: silver;
         }
         .navbar-brand{
-            color: $secondary;
+            color: $primary;
             font-weight: bolder;
+            font-size: 30px;
         }
     }
 }
 
 
+// HERO
+
+.hero{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("../images/_rhickeeeeeeey_cyberpunk_city_like_london_and_rome_with_angels__38eff546-aea4-46e3-b4fd-c2e0da2a576d.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    #HeroTitle{
+        color: orange;
+        font-size: 5em;
+    }
+    #HeroDescription{
+        color: #fff;
+    }
+}   

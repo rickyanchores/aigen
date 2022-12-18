@@ -4,6 +4,11 @@ $secondary: coral;
 
 
 // PERSONAL EDIT
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background: $body-bg;
     color: #333;
@@ -52,16 +57,59 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    height: 100vh;
-    border: 2px solid red;
+    padding: 1em;
+    //border: 2px solid red;
     #HeroTitle{
         color: $primary;
         font-size: 12em;
     }
     #HeroDescription{
         color: #333;
-        background: red;
+        //background: red;
         margin-left: 30%;
         //margin-bottom: 20%;
     }
 }   
+
+
+// Gallery
+
+.Gallery{
+    //background: coral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+    img{
+        width: 100%;
+        border-radius: 12px;
+    }
+    .left{
+        width: 60%;
+        border: 2px solid teal;
+        img{
+            width: 100%;
+        }
+    }
+    .right{
+        width: 40%;
+        border: 2px solid coral;
+        .box{
+            background: silver;
+            border-radius: 12px;
+            width: 300px;
+            margin-bottom: 1em;
+            img{
+                width: 100%;
+            }
+            .text{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                width: 70%;
+                padding: 1em;
+            }
+        }
+    }
+}

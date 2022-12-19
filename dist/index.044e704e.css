@@ -12005,4 +12005,8 @@ textarea.form-control-lg {
   }
 }
 
+.navbar-collapse {
+  flex-direction: flex-end;
+}
+
 /*# sourceMappingURL=index.044e704e.css.map */

@@ -31,15 +31,16 @@ body{
     margin: auto;
 }
 
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
 // NAVBAR
 .nav-container{
     width: 100%;
     margin: auto;
     .navbar{
         background: none;
-        .navbar-collapse{
-            justify-content: flex-end;
-        }
         .navbar-brand{
             color: $primary;
             font-weight: bolder;
@@ -77,52 +78,62 @@ body{
 
 // Gallery
 
-.Gallery{
-    //background: coral;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1em;
+.Gallery {
+    display: grid;
+    margin: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "BOX-1 BOX-1 BOX-2"
+      "BOX-1 BOX-1 BOX-3";
     img{
         width: 100%;
         border-radius: 12px;
+    }  
+    grid-gap: 1em;
+  }
+  
+  .BOX-1 {
+     grid-area: BOX-1; 
+     border-radius: 12px;
+     background-color: #fff;
+     box-shadow: 5px 5px 15px 5px #ccc;
+     border: none;
     }
-    .left{
-        width: 60%;
-        //border: 2px solid teal;
-        img{
-            width: 100%;
-        }
-    }
-    .right{
+  
+  .BOX-2 { 
+    grid-area: BOX-2; 
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px 5px #ccc;
+    border: none;
+    .textBox{
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        width: 40%;
-        //border: 2px solid coral;
-        .card{
-            border-radius: 12px;
-            width: 300px;
-            margin-bottom: 1em;
-            img{
-                width: 100%;
-            }
-            .card-body{
-                display: flex;
-                justify-content: space-between;
-                text-align: center;
-                width: 70%;
-                padding: 1em;
-                .profile img{
-                    width: 50px;
-                    border-radius: 50%;
-                }
-            }
+        height: 100%;
+        .user{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
         }
     }
+
+    
 }
-
-
+  
+  .BOX-3 {
+    grid-area: BOX-3;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px 5px #ccc;
+    border: none;
+ }
+  
 

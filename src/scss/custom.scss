@@ -48,7 +48,12 @@ body{
         }
     }
 }
-
+#navbarSupportedContent{
+    display:flex;
+    flex-basis: none;
+    background-color: teal;
+    justify-content: flex-end;
+}
 
 // HERO
 

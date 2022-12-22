@@ -46,6 +46,13 @@ body {
   font-weight: bolder;
 }
 
+#navbarSupportedContent {
+  flex-basis: none;
+  background-color: teal;
+  justify-content: flex-end;
+  display: flex;
+}
+
 .hero {
   width: 100%;
   height: 40vh;

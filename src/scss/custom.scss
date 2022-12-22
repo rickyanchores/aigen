@@ -32,9 +32,7 @@ body{
 }
 
 
-.navbar-collapse{
-    justify-content: flex-end;
-}
+
 // NAVBAR
 .nav-container{
     width: 100%;
@@ -46,14 +44,14 @@ body{
             font-weight: bolder;
             font-size: 30px;
         }
+        .navbar-collapse{
+            flex-grow: unset;
+        }
     }
 }
-#navbarSupportedContent{
-    display:flex;
-    flex-basis: none;
-    background-color: teal;
-    justify-content: flex-end;
-}
+
+//TO FIX
+
 
 // HERO
 

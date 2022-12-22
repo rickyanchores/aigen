@@ -27,10 +27,6 @@ body {
   margin: auto;
 }
 
-.navbar-collapse {
-  justify-content: flex-end;
-}
-
 .nav-container {
   width: 100%;
   margin: auto;
@@ -46,11 +42,8 @@ body {
   font-weight: bolder;
 }
 
-#navbarSupportedContent {
-  flex-basis: none;
-  background-color: teal;
-  justify-content: flex-end;
-  display: flex;
+.nav-container .navbar .navbar-collapse {
+  flex-grow: unset;
 }
 
 .hero {
